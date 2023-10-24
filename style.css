@@ -22,6 +22,13 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+/* Style for the profile picture (avatar) */
+.profile img {
+    border-radius: 50%; /* Make the image appear circular */
+    width: 150px; /* Adjust the width to your preference */
+    height: 150px; /* Adjust the height to your preference */
+    object-fit: cover; /* Ensure the image fills the circular frame */
+}
 
 /* Style for your name */
 .profile h1 {
