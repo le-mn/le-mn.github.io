@@ -41,3 +41,28 @@ body {
     font-size: 18px;
     margin: 10px 0;
 }
+/* Remove bullet points from the navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0073e6; /* Change this color to your preference */
+    font-size: 18px;
+    transition: color 0.3s; /* Add a smooth color transition effect */
+
+    /* Optional: Hover effect to change color on hover */
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #ff5722; /* Change this color to your preferred hover color */
+}
