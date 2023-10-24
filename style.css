@@ -6,4 +6,31 @@
 /* Apply the Barlow font to the entire webpage */
 body {
     font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+}
+
+/* Style for the profile section */
+.profile {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style for your name */
+.profile h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Style for the brief introduction */
+.profile p {
+    font-size: 18px;
+    margin: 10px 0;
 }
