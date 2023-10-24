@@ -100,3 +100,21 @@ nav ul li a:hover {
     vertical-align: top;
     white-space: normal;
 }
+/* Your existing styles */
+
+.container {
+    display: flex;
+    align-items: center;
+    /* Add any other CSS properties for styling the container */
+}
+
+.container img {
+    max-width: 50%;
+    /* Add any other CSS properties for styling the image */
+}
+
+.container .text {
+    flex: 1;
+    padding: 20px;
+    /* Add any other CSS properties for styling the text */
+}
