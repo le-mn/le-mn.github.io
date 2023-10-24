@@ -1,2 +1,9 @@
 /* Style for your website */
 /* Add your styles here */
+/* Import the Barlow font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+/* Apply the Barlow font to the entire webpage */
+body {
+    font-family: 'Barlow', sans-serif;
+}
