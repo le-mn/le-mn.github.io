@@ -66,3 +66,37 @@ nav ul li a {
 nav ul li a:hover {
     color: #ff5722; /* Change this color to your preferred hover color */
 }
+#projects {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+/* Create scrolling behavior for the project section */
+#projects {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.project-card {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
