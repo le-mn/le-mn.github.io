@@ -178,3 +178,16 @@ footer {
     text-align: center;
     z-index: 1; /* Add this to ensure the footer is above other content */
 }
+/* For mobile devices (less than 768px wide) */
+@media (max-width: 767px) {
+    #main-content {
+        margin-top: 50px; /* Adjust as needed for mobile devices */
+    }
+}
+
+/* For desktop and larger screens (768px and above) */
+@media (min-width: 768px) {
+    #main-content {
+        margin-top: 100px; /* Adjust as needed for desktop screens */
+    }
+}
