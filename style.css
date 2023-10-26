@@ -143,3 +143,11 @@ nav ul li a:hover {
     color: #00008B; /* Dark blue color */
     font-weight: bold;
 }
+.icon {
+    display: inline-block;
+    margin-right: 5px; /* Adjust the margin as needed to control spacing */
+}
+
+.divider {
+    margin: 0 5px; /* Adjust the margin as needed to control spacing */
+}
