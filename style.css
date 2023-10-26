@@ -123,7 +123,7 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #00008B; /* Dark blue background color */
+    background-color: #fff; /* White color */
     z-index: 1000;
 }
 
@@ -140,6 +140,6 @@ nav ul li a:hover {
 
 #top-nav a {
     text-decoration: none;
-    color: #fff; /* White text color */
+    color: #00008B; /* Dark blue color */
     font-weight: bold;
 }
