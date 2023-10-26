@@ -171,12 +171,11 @@ body {
 }
 /* Footer style */
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 10px;
     text-align: center;
-    z-index: 1; /* Add this to ensure the footer is above other content */
 }
 /* For mobile devices (less than 768px wide) */
 @media (max-width: 767px) {
