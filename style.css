@@ -169,3 +169,11 @@ body {
     font-size: 12px; /* Further adjust font size for mobile devices */
   }
 }
+/* Footer style */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
