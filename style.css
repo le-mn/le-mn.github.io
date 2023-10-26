@@ -118,3 +118,28 @@ nav ul li a:hover {
     padding: 20px;
     /* Add any other CSS properties for styling the text */
 }
+#top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00008B; /* Dark blue background color */
+    z-index: 1000;
+}
+
+#top-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#top-nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-weight: bold;
+}
