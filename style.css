@@ -276,3 +276,46 @@ footer {
         font-size: 14px; /* Further adjust font size for mobile devices */
     }
 }
+/* CSS for the mobile menu */
+.menu-toggle {
+    display: none; /* Initially hide the menu toggle button */
+}
+
+#top-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#top-nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: #00008B; /* Dark blue color */
+    font-weight: bold;
+}
+
+/* CSS to show the mobile menu when toggled */
+#top-nav ul.show-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 60px; /* Adjust this value to control the vertical position */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#top-nav ul.show-menu li {
+    margin: 10px 0;
+}
+
+#top-nav ul.show-menu a {
+    font-size: 18px;
+    font-weight: normal;
+}
