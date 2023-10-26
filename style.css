@@ -190,3 +190,54 @@ footer {
         margin-top: 100px; /* Adjust as needed for desktop screens */
     }
 }
+/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
+@media (max-width: 768px) {
+    /* Adjust the top navigation bar styles for tablets */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for tablets */
+    }
+
+    /* Adjust other styles for tablets as needed */
+}
+
+/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
+@media (max-width: 768px) {
+    /* Adjust the top navigation bar styles for tablets */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for tablets */
+    }
+
+    #top-nav a {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+
+    /* Adjust other styles for tablets as needed */
+}
+
+/* Add this media query for screens with a maximum width of 480px (typical for mobile devices) */
+@media (max-width: 480px) {
+    /* Adjust the top navigation bar styles for mobile devices */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for mobile devices */
+    }
+
+    #top-nav a {
+        font-size: 14px; /* Further adjust font size for mobile devices */
+    }
+}
+
