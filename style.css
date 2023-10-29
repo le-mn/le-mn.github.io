@@ -176,7 +176,7 @@ footer {
     width: 100%;
     padding: 10px;
     text-align: center;
-    display: none; /* Hide the footer by default */
+   /*  display: none;  Hide the footer by default */
 }
 /* For mobile devices (less than 768px wide) */
 @media (max-width: 767px) {
