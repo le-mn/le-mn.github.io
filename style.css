@@ -25,8 +25,8 @@ body {
 /* Style for the profile picture (avatar) */
 .profile img {
     border-radius: 50%; /* Make the image appear circular */
-    width: 150px; /* Adjust the width to your preference */
-    height: 150px; /* Adjust the height to your preference */
+    width: 250px; /* Adjust the width to your preference */
+    height: 250px; /* Adjust the height to your preference */
     object-fit: cover; /* Ensure the image fills the circular frame */
 }
 
