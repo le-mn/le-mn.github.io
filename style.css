@@ -1,68 +1,151 @@
-/* Add the Barlow font from Google Fonts */
+/* Style for your website */
+/* Add your styles here */
+/* Import the Barlow font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
-/* Global Styles */
+/* Apply the Barlow font to the entire webpage */
 body {
     font-family: 'Barlow', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
     background-image: url('your-background-image.jpg');
     background-size: cover;
-    font-size: 16px;
-    margin: 0;
-    padding-top: 70px; /* Space for the fixed navbar */
 }
 
-/* Profile Section */
+/* Style for the profile section */
 .profile {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
-    max-width: 500px;
-    margin: 20px auto;
-}
+    max-width: 500px; /* Set a maximum width to ensure the profile section can fit the larger image */
+    margin: 0 auto; /* Center the profile section horizontally */
 
+}
+/* Style for the profile picture (avatar) */
 .profile img {
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
+    border-radius: 50%; /* Make the image appear circular */
+    width: 350px; /* Adjust the width to your preference */
+    height: 350px; /* Adjust the height to your preference */
+    object-fit: cover; /* Ensure the image fills the circular frame */
 }
 
+/* Style for your name */
 .profile h1 {
     font-size: 24px;
     margin: 10px 0;
 }
 
+/* Style for the brief introduction */
 .profile p {
     font-size: 18px;
     margin: 10px 0;
 }
+/* Remove bullet points from the navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
-/* Navigation Bar */
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0073e6; /* Change this color to your preference */
+    font-size: 18px;
+    transition: color 0.3s; /* Add a smooth color transition effect */
+
+    /* Optional: Hover effect to change color on hover */
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #ff5722; /* Change this color to your preferred hover color */
+}
+#projects {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+/* Container for horizontal scrolling */
+.scrollable-container {
+    display: flex;          /* Arrange the project cards in a row */
+    overflow-x: auto;       /* Allow horizontal scrolling */
+    overflow-y: auto;   
+    gap: 20px;              /* Add space between the cards */
+    padding: 20px 0;        /* Optional: Add padding to top and bottom */
+    justify-content: start; /* Align items to the left */
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+/* Create scrolling behavior for the project section */
+#projects {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.project-card {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+/* Your existing styles */
+
+.container {
+    display: flex;
+    align-items: center;
+    /* Add any other CSS properties for styling the container */
+}
+
+.container img {
+    max-width: 50%;
+    /* Add any other CSS properties for styling the image */
+}
+
+.container .text {
+    flex: 1;
+    padding: 20px;
+    /* Add any other CSS properties for styling the text */
+}
 #top-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #fff; /* White color */
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
 }
 
 #top-nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin: 0;
 }
 
 #top-nav li {
-    display: inline-block;
+    display: inline;
     margin: 0 20px;
 }
 
@@ -70,26 +153,185 @@ body {
     text-decoration: none;
     color: #00008B; /* Dark blue color */
     font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
+}
+.icon {
+    display: inline-block;
+    margin-right: 5px; /* Adjust the margin as needed to control spacing */
 }
 
-#top-nav a:hover {
-    color: #FF6347; /* Tomato color on hover */
+.divider {
+    margin: 0 5px; /* Adjust the margin as needed to control spacing */
+}
+/* Default styles for desktop */
+body {
+  font-size: 16px;
 }
 
-/* Mobile Menu Styles */
+/* Media query for screens with a maximum width of 768px (typical for tablets) */
+@media (max-width: 768px) {
+  #top-nav ul {
+        display: flex;
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: center;    /* Center the nav items */
+    }
+
+    #top-nav li {
+        margin: 10px 0; /* Increase margin for vertical stacking */
+    }
+
+    #top-nav a {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (typical for mobile devices) */
+@media (max-width: 480px) {
+  #top-nav a {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    #top-nav li {
+        margin: 8px 0; /* Adjust margin for smaller screens */
+    }
+}
+/* Footer style */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+   /*  display: none;  Hide the footer by default */
+}
+/* For mobile devices (less than 768px wide) */
+@media (max-width: 767px) {
+    #main-content {
+        margin-top: 50px; /* Adjust as needed for mobile devices */
+    }
+}
+
+/* For desktop and larger screens (768px and above) */
+@media (min-width: 768px) {
+    #main-content {
+        margin-top: 100px; /* Adjust as needed for desktop screens */
+    }
+}
+/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
+@media (max-width: 768px) {
+    /* Adjust the top navigation bar styles for tablets */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for tablets */
+    }
+
+    /* Adjust other styles for tablets as needed */
+}
+
+/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
+@media (max-width: 768px) {
+    /* Adjust the top navigation bar styles for tablets */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for tablets */
+    }
+
+    #top-nav a {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+
+    /* Adjust other styles for tablets as needed */
+}
+
+/* Add this media query for screens with a maximum width of 480px (typical for mobile devices) */
+@media (max-width: 480px) {
+    /* Adjust the top navigation bar styles for mobile devices */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for mobile devices */
+    }
+
+    #top-nav a {
+        font-size: 14px; /* Further adjust font size for mobile devices */
+    }
+}
+
+/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
+@media (max-width: 768px) {
+    /* Adjust the top navigation bar styles for tablets */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for tablets */
+    }
+
+    #top-nav a {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+
+    /* Adjust other styles for tablets as needed */
+}
+
+/* Add this media query for screens with a maximum width of 480px (typical for mobile devices) */
+@media (max-width: 480px) {
+    /* Adjust the top navigation bar styles for mobile devices */
+    #top-nav ul {
+        text-align: center;
+    }
+
+    #top-nav li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing as needed for mobile devices */
+    }
+
+    #top-nav a {
+        font-size: 14px; /* Further adjust font size for mobile devices */
+    }
+}
+/* CSS for the mobile menu */
 .menu-toggle {
-    display: none; /* Hide mobile menu toggle by default */
+    display: none; /* Initially hide the menu toggle button */
 }
 
+#top-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#top-nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: #00008B; /* Dark blue color */
+    font-weight: bold;
+}
+
+/* CSS to show the mobile menu when toggled */
 #top-nav ul.show-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     position: absolute;
-    top: 60px; /* Below the navbar */
+    top: 60px; /* Adjust this value to control the vertical position */
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -103,116 +345,3 @@ body {
     font-size: 18px;
     font-weight: normal;
 }
-
-/* Project Section */
-#projects {
-    padding: 20px;
-    background-color: #f0f0f0;
-    overflow: auto;
-}
-
-.project-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    text-align: center;
-}
-
-/* Container for horizontal scrolling */
-.scrollable-container {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: auto;
-    gap: 20px;
-    padding: 20px 0;
-    justify-content: start;
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-}
-
-/* Footer Style */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Media Queries */
-
-/* For screens 768px and below (tablets) */
-@media (max-width: 768px) {
-    #top-nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #top-nav li {
-        margin: 10px 0;
-    }
-
-    #top-nav a {
-        font-size: 16px;
-    }
-
-    /* Enable the menu toggle for mobile devices */
-    .menu-toggle {
-        display: flex;
-        font-size: 24px;
-        cursor: pointer;
-        background: none;
-        border: none;
-        color: #00008B;
-    }
-    
-    /* Adjust project card layout */
-    .scrollable-container {
-        flex-direction: column;
-        overflow-x: hidden;
-    }
-
-    .project-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-/* For screens 480px and below (mobile) */
-@media (max-width: 480px) {
-    #top-nav a {
-        font-size: 14px;
-    }
-
-    #top-nav li {
-        margin: 10px 0;
-    }
-
-    /* Adjust profile section for mobile */
-    .profile {
-        padding: 15px;
-        width: 90%; /* Ensure the profile section takes up most of the screen */
-    }
-
-    .profile img {
-        width: 250px;
-        height: 250px;
-    }
-}
-// Get the menu toggle button and the navigation list
-const menuToggle = document.querySelector('.menu-toggle');
-const navList = document.querySelector('#top-nav ul');
-
-// Toggle the 'show-menu' class to show/hide the mobile menu
-menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('show-menu');
-});
