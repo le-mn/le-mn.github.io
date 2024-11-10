@@ -30,3 +30,18 @@ window.addEventListener("scroll", function() {
 });
 
 // Your existing JavaScript code can go here or continue below this section.
+    <script src="script.js"></script>
+<script>
+    // JavaScript to toggle the mobile menu
+    const mobileMenu = document.getElementById('top-nav');
+    const navList = mobileMenu.querySelector('ul');
+    const menuToggle = document.createElement('div');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    
+    mobileMenu.appendChild(menuToggle);
+
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('show-menu');
+    });
+</script>
