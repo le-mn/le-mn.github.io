@@ -85,15 +85,7 @@ nav ul li a:hover {
     width: 300px;
     text-align: center;
 }
-/* Container for horizontal scrolling */
-.scrollable-container {
-    display: flex;          /* Arrange the project cards in a row */
-    overflow-x: auto;       /* Allow horizontal scrolling */
-    overflow-y: auto;   
-    gap: 20px;              /* Add space between the cards */
-    padding: 20px 0;        /* Optional: Add padding to top and bottom */
-    justify-content: start; /* Align items to the left */
-}
+
 .project-card img {
     width: 100%;
     height: auto;
@@ -169,30 +161,16 @@ body {
 
 /* Media query for screens with a maximum width of 768px (typical for tablets) */
 @media (max-width: 768px) {
-  #top-nav ul {
-        display: flex;
-        flex-direction: column; /* Stack the nav items vertically */
-        align-items: center;    /* Center the nav items */
-    }
-
-    #top-nav li {
-        margin: 10px 0; /* Increase margin for vertical stacking */
-    }
-
-    #top-nav a {
-        font-size: 16px; /* Slightly smaller font size for mobile */
-    }
+  body {
+    font-size: 14px; /* Adjust font size for tablets */
+  }
 }
 
 /* Media query for screens with a maximum width of 480px (typical for mobile devices) */
 @media (max-width: 480px) {
-  #top-nav a {
-        font-size: 14px; /* Smaller font size for very small screens */
-    }
-
-    #top-nav li {
-        margin: 8px 0; /* Adjust margin for smaller screens */
-    }
+  body {
+    font-size: 12px; /* Further adjust font size for mobile devices */
+  }
 }
 /* Footer style */
 footer {
