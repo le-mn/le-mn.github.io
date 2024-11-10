@@ -89,6 +89,7 @@ nav ul li a:hover {
 .scrollable-container {
     display: flex;          /* Arrange the project cards in a row */
     overflow-x: auto;       /* Allow horizontal scrolling */
+    overflow-y: auto;   
     gap: 20px;              /* Add space between the cards */
     padding: 20px 0;        /* Optional: Add padding to top and bottom */
     justify-content: start; /* Align items to the left */
