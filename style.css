@@ -169,16 +169,30 @@ body {
 
 /* Media query for screens with a maximum width of 768px (typical for tablets) */
 @media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjust font size for tablets */
-  }
+  #top-nav ul {
+        display: flex;
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: center;    /* Center the nav items */
+    }
+
+    #top-nav li {
+        margin: 10px 0; /* Increase margin for vertical stacking */
+    }
+
+    #top-nav a {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+    }
 }
 
 /* Media query for screens with a maximum width of 480px (typical for mobile devices) */
 @media (max-width: 480px) {
-  body {
-    font-size: 12px; /* Further adjust font size for mobile devices */
-  }
+  #top-nav a {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    #top-nav li {
+        margin: 8px 0; /* Adjust margin for smaller screens */
+    }
 }
 /* Footer style */
 footer {
