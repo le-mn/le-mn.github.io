@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title> Why astronomy? </title>
+    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <header>
+         <div id="top-nav">
+              <nav>
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About me</a></li>
+                     <li><a href="projects.html">Research</a></li>
+                     <li><a href="others.html">In my free time</a></li>
+                     <li><a href="news.html">Travels & news </a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+    <main>
+         <h2> 
+         <i style="font-size:24px" class="fa">&#xf1b0;</i>
+         Why do I do astronomy? </h2>
+         <br>
+         I was obsessed with the night sky on my island. 
+         <br>
+         There was no electricity in my village until I was 8. Therefore, the child me can observe the beautify sky full of stars.  
+         <br>
+         <br>
+         <br>
+         <br>
+        Back to my <a href="about.html"> curriculum vitae </a>, my  <a href="projects.html"> research </a> or <a href="contact.html"> contact me </a>. </p>
+
+    </main>
+    <script src="script.js"></script>
+     <footer id="page-footer"> 
+        <p>&copy; 2024 Minh Ngoc Le. All rights reserved.</p>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
