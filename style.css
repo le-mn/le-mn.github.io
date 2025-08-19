@@ -1,325 +1,148 @@
-/* Style for your website */
-/* Add your styles here */
 /* Import the Barlow font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
-/* Apply the Barlow font to the entire webpage */
+/* Apply the Barlow font globally */
 body {
     font-family: 'Barlow', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
     background-image: url('your-background-image.jpg');
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
-/* Style for the profile section */
-.profile {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px; /* Set a maximum width to ensure the profile section can fit the larger image */
-    margin: 0 auto; /* Center the profile section horizontally */
-
-}
-/* Style for the profile picture (avatar) */
-.profile img {
-    border-radius: 50%; /* Make the image appear circular */
-    width: 350px; /* Adjust the width to your preference */
-    height: 350px; /* Adjust the height to your preference */
-    object-fit: cover; /* Ensure the image fills the circular frame */
-}
-
-/* Style for your name */
-.profile h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-/* Style for the brief introduction */
-.profile p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-/* Remove bullet points from the navigation links */
-nav ul {
+/* Navigation styles */
+#top-nav nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
 }
 
-nav ul li {
-    margin: 0 20px;
+#top-nav nav ul li {
+    margin: 8px 18px;
 }
 
-nav ul li a {
+#top-nav nav ul li a {
     text-decoration: none;
-    color: #0073e6; /* Change this color to your preference */
+    color: #0073e6;
     font-size: 18px;
-    transition: color 0.3s; /* Add a smooth color transition effect */
-
-    /* Optional: Hover effect to change color on hover */
+    transition: color 0.3s;
     cursor: pointer;
+    font-weight: 500;
 }
 
-nav ul li a:hover {
-    color: #ff5722; /* Change this color to your preferred hover color */
+#top-nav nav ul li a:hover,
+#top-nav nav ul li a.active {
+    color: #ff5722;
 }
-#projects {
-    padding: 20px;
-    background-color: #f0f0f0;
+
+/* Main content styles */
+main {
+    max-width: 900px;
+    margin: 24px auto;
+    background: rgba(255,255,255,0.93);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 32px;
+    font-size: 2em;
+    color: #0073e6;
 }
 
 .project-card {
-    background-color: #fff;
+    background: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    display: inline-block;
-    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.09);
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    max-width: 400px;
+    display: block;
     text-align: center;
 }
 
 .project-card img {
-    width: 100%;
+    width: 85%;
     height: auto;
-    max-height: 200px;
+    max-height: 180px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    object-fit: cover;
 }
 
-/* Create scrolling behavior for the project section */
-#projects {
-    overflow: auto;
-    white-space: nowrap;
-}
-
-.project-card {
-    display: inline-block;
-    vertical-align: top;
-    white-space: normal;
-}
-/* Your existing styles */
-
-.container {
-    display: flex;
-    align-items: center;
-    /* Add any other CSS properties for styling the container */
-}
-
-.container img {
-    max-width: 50%;
-    /* Add any other CSS properties for styling the image */
-}
-
-.container .text {
-    flex: 1;
-    padding: 20px;
-    /* Add any other CSS properties for styling the text */
-}
-#top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff; /* White color */
-    z-index: 1000;
-}
-
-#top-nav ul {
-    list-style: none;
-    padding: 0;
+/* Footer */
+footer#page-footer {
     text-align: center;
+    background: rgba(255,255,255,0.95);
+    padding: 18px 0;
+    font-size: 1em;
+    color: #555;
+    border-radius: 0 0 12px 12px;
+    margin-top: 28px;
 }
 
-#top-nav li {
-    display: inline;
-    margin: 0 20px;
-}
-
-#top-nav a {
-    text-decoration: none;
-    color: #00008B; /* Dark blue color */
-    font-weight: bold;
-}
-.icon {
-    display: inline-block;
-    margin-right: 5px; /* Adjust the margin as needed to control spacing */
-}
-
-.divider {
-    margin: 0 5px; /* Adjust the margin as needed to control spacing */
-}
-/* Default styles for desktop */
-body {
-  font-size: 16px;
-}
-
-/* Media query for screens with a maximum width of 768px (typical for tablets) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjust font size for tablets */
-  }
-}
-
-/* Media query for screens with a maximum width of 480px (typical for mobile devices) */
-@media (max-width: 480px) {
-  body {
-    font-size: 12px; /* Further adjust font size for mobile devices */
-  }
-}
-/* Footer style */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-   /*  display: none;  Hide the footer by default */
-}
-/* For mobile devices (less than 768px wide) */
-@media (max-width: 767px) {
-    #main-content {
-        margin-top: 50px; /* Adjust as needed for mobile devices */
+/* Responsive styles */
+@media (max-width: 900px) {
+    main {
+        max-width: 98vw;
+        padding: 12px;
+    }
+    .project-card {
+        max-width: 98vw;
+        padding: 12px;
     }
 }
 
-/* For desktop and larger screens (768px and above) */
-@media (min-width: 768px) {
-    #main-content {
-        margin-top: 100px; /* Adjust as needed for desktop screens */
+@media (max-width: 600px) {
+    #top-nav nav ul {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
     }
-}
-/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
-@media (max-width: 768px) {
-    /* Adjust the top navigation bar styles for tablets */
-    #top-nav ul {
-        text-align: center;
+    #top-nav nav ul li {
+        margin: 10px 0;
     }
-
-    #top-nav li {
-        display: block;
-        margin: 10px 0; /* Adjust spacing as needed for tablets */
+    main {
+        padding: 8px;
     }
-
-    /* Adjust other styles for tablets as needed */
-}
-
-/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
-@media (max-width: 768px) {
-    /* Adjust the top navigation bar styles for tablets */
-    #top-nav ul {
-        text-align: center;
+    h2 {
+        font-size: 1.35em;
+        margin-top: 20px;
     }
-
-    #top-nav li {
-        display: block;
-        margin: 10px 0; /* Adjust spacing as needed for tablets */
+    .project-card {
+        max-width: 100vw;
+        margin: 12px 0;
+        padding: 8px;
     }
-
-    #top-nav a {
-        font-size: 16px; /* Adjust font size for tablets */
+    .project-card img {
+        width: 98%;
+        max-height: 130px;
     }
-
-    /* Adjust other styles for tablets as needed */
-}
-
-/* Add this media query for screens with a maximum width of 480px (typical for mobile devices) */
-@media (max-width: 480px) {
-    /* Adjust the top navigation bar styles for mobile devices */
-    #top-nav ul {
-        text-align: center;
-    }
-
-    #top-nav li {
-        display: block;
-        margin: 10px 0; /* Adjust spacing as needed for mobile devices */
-    }
-
-    #top-nav a {
-        font-size: 14px; /* Further adjust font size for mobile devices */
+    footer#page-footer {
+        font-size: 0.95em;
+        padding: 8px 0;
     }
 }
 
-/* Add this media query for screens with a maximum width of 768px (typical for tablets) */
-@media (max-width: 768px) {
-    /* Adjust the top navigation bar styles for tablets */
-    #top-nav ul {
-        text-align: center;
-    }
-
-    #top-nav li {
-        display: block;
-        margin: 10px 0; /* Adjust spacing as needed for tablets */
-    }
-
-    #top-nav a {
-        font-size: 16px; /* Adjust font size for tablets */
-    }
-
-    /* Adjust other styles for tablets as needed */
+/* Utility: For images, paragraphs, and links */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Add this media query for screens with a maximum width of 480px (typical for mobile devices) */
-@media (max-width: 480px) {
-    /* Adjust the top navigation bar styles for mobile devices */
-    #top-nav ul {
-        text-align: center;
-    }
-
-    #top-nav li {
-        display: block;
-        margin: 10px 0; /* Adjust spacing as needed for mobile devices */
-    }
-
-    #top-nav a {
-        font-size: 14px; /* Further adjust font size for mobile devices */
-    }
-}
-/* CSS for the mobile menu */
-.menu-toggle {
-    display: none; /* Initially hide the menu toggle button */
+a {
+    word-break: break-word;
 }
 
-#top-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-#top-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-#top-nav a {
-    text-decoration: none;
-    color: #00008B; /* Dark blue color */
-    font-weight: bold;
-}
-
-/* CSS to show the mobile menu when toggled */
-#top-nav ul.show-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    position: absolute;
-    top: 60px; /* Adjust this value to control the vertical position */
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-#top-nav ul.show-menu li {
-    margin: 10px 0;
-}
-
-#top-nav ul.show-menu a {
-    font-size: 18px;
-    font-weight: normal;
-}
+/* Add more custom styles as needed */
