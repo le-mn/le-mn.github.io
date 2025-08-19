@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 60vh; /* enough space to visually center even on short screens */
+        }
+        #page-footer {
+            flex-shrink: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1em 0;
+            background: #f8f8f8;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <!-- Content for your About Me page -->
     <header>
-         <div id="top-nav">
-             <nav>
-                 <ul>
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="about.html">About me</a></li>
-                     <li><a href="projects.html">Research</a></li>
-                     <li><a href="others.html">In my free time</a></li>
-                      <li><a href="news.html">Travels & news </a></li>
-                     <li><a href="contact.html">Contact</a></li>
-                 </ul>
-             </nav>
-         </div>
+        <div id="top-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="projects.html">Research</a></li>
+                    <li><a href="others.html">In my free time</a></li>
+                    <li><a href="news.html">Travels & news </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-         Reach me at <a href="mailto:minhngoc.le@iac.es">
-    <span class="icon"><i class="fas fa-envelope"></i></span> minhngoc.le(at)iac.es
-</a>
-
-         
+        <div>
+            Reach me at 
+            <a href="mailto:minhngoc.le@iac.es">
+                <span class="icon"><i class="fas fa-envelope"></i></span> minhngoc.le(at)iac.es
+            </a>
+        </div>
     </main>
-    <script src="script.js"></script>
-     <footer id="page-footer">
+    <footer id="page-footer">
         <p>&copy; 2024 Minh Ngoc Le. All rights reserved.</p>
     </footer>
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
