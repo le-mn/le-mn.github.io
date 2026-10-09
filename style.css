@@ -102,7 +102,7 @@ footer#page-footer {
 @media (max-width: 900px) {
     .menu-toggle { display: block; }
     #top-nav nav ul { display: none; }
-    #top-nav nav ul.show-menu { display: flex; }
+    #top-nav nav ul.show-menu { display: flex !important; }
     main {
         max-width: 98vw;
         padding: 12px;
