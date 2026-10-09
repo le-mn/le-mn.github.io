@@ -67,15 +67,15 @@ h2 {
     padding: 16px;
     margin: 16px 0;
     width: 100%;
-    width: clamp(260px, 90%, 400px);
+    max-width: 400px;
     display: block;
     text-align: center;
+    box-sizing: border-box;
 }
-
 .project-card img {
-    width: 85%;
+    width: 100%;
     height: auto;
-    max-height: clamp(100px, 20vw, 180px);
+    max-height: clamp(160px, 28vw, 280px);
     border-radius: 6px;
     margin-bottom: 12px;
     object-fit: cover;
