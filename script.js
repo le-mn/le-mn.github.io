@@ -1,52 +1,32 @@
-// JavaScript for showing and hiding content
+// Show/hide content sections
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("nav a");
     const pages = document.querySelectorAll("main > div");
-
     links.forEach((link) => {
         link.addEventListener("click", (event) => {
             const target = event.target.getAttribute("href").substring(1);
             pages.forEach((page) => {
-                if (page.id === target) {
-                    page.classList.add("active");
-                } else {
-                    page.classList.remove("active");
-                }
+                page.classList.toggle("active", page.id === target);
             });
         });
     });
 });
-window.addEventListener("scroll", function() {
-    var pageFooter = document.getElementById("page-footer");
 
-    // Check if the user has scrolled to the end of the content
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // Display the footer when the end is reached
-        pageFooter.style.display = "block";
-    } else {
-        // Hide the footer if not at the end
-        pageFooter.style.display = "none";
+// Show footer only at bottom
+window.addEventListener("scroll", function () {
+    var pageFooter = document.getElementById("page-footer");
+    if (pageFooter) {
+        pageFooter.style.display =
+            (window.innerHeight + window.scrollY) >= document.body.offsetHeight
+            ? "block" : "none";
     }
 });
 
-// Your existing JavaScript code can go here or continue below this section.
-    <script src="script.js"></script>
-<script>
-    // JavaScript to toggle the mobile menu
-    const mobileMenu = document.getElementById('top-nav');
-    const navList = mobileMenu.querySelector('ul');
-    const navToggle = document.querySelector('.nav-toggle');
-    const menuToggle = document.createElement('div');
-    menuToggle.className = 'menu-toggle';
-    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-    
-    mobileMenu.appendChild(menuToggle);
-
-    menuToggle.addEventListener('click', function() {
-        navList.classList.toggle('show-menu');
-    if (navToggle) {
-    navToggle.addEventListener('click', function() {
+// Mobile hamburger menu
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function () {
         navLinks.classList.toggle('open');
     });
-    });
-</script>
+}
