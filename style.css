@@ -90,32 +90,9 @@ footer#page-footer {
     border-radius: 0 0 12px 12px;
     margin-top: 28px;
 }
-/* Hamburger menu button — hidden on desktop */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 1.6rem;
-    color: #0073e6;
-    padding: 0.5rem 1rem;
-}
+/* Hamburger button — hidden on desktop */
 .nav-toggle {
     display: none;
-}
-/* Responsive styles */
-@media (max-width: 900px) {
-    .menu-toggle { display: block; }
-    #top-nav nav ul { display: none; }
-    #top-nav nav ul.show-menu { display: flex !important; }
-    main {
-        max-width: 98vw;
-        padding: 12px;
-    }
-    .project-card {
-        max-width: 98vw;
-        padding: 12px;
-    }
-    .nav-toggle {
-    display: block;
     background: none;
     border: none;
     font-size: 1.6rem;
@@ -123,14 +100,14 @@ footer#page-footer {
     cursor: pointer;
     padding: 0.5rem 1rem;
 }
-.nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-.nav-links.open {
-    display: flex;
-}
+
+/* Responsive — tablet and mobile */
+@media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    #top-nav nav ul.nav-links { display: none; flex-direction: column; align-items: center; }
+    #top-nav nav ul.nav-links.open { display: flex; }
+    main { max-width: 98vw; padding: 12px; }
+    .project-card { max-width: 98vw; padding: 12px; }
 }
 
 @media (max-width: 600px) {
