@@ -35,6 +35,7 @@ window.addEventListener("scroll", function() {
     // JavaScript to toggle the mobile menu
     const mobileMenu = document.getElementById('top-nav');
     const navList = mobileMenu.querySelector('ul');
+    const navToggle = document.querySelector('.nav-toggle');
     const menuToggle = document.createElement('div');
     menuToggle.className = 'menu-toggle';
     menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
@@ -43,5 +44,9 @@ window.addEventListener("scroll", function() {
 
     menuToggle.addEventListener('click', function() {
         navList.classList.toggle('show-menu');
+    if (navToggle) {
+    navToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+    });
     });
 </script>
