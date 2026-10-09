@@ -75,7 +75,6 @@ h2 {
 .project-card img {
     width: 100%;
     height: auto;
-    max-height: clamp(160px, 28vw, 280px);
     border-radius: 6px;
     margin-bottom: 12px;
     object-fit: cover;
